@@ -11,7 +11,7 @@
 
 class TimetableData extends CodonData   {
 
-    public function get_schedules($offset) {
+    public static function get_schedules($offset) {
         $query = "SELECT * FROM ".TABLE_PREFIX."schedules
                     ORDER BY depicao ASC
                     LIMIT 30
